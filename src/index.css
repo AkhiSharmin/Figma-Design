@@ -1,0 +1,56 @@
+/* Font Family */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* this defines what 1 rem is */
+  font-size: 62.5%; /* 1rem = 10px  10px*16px = 62% */
+  font-family: "itoya-ultralight", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.nav-button,
+.nav-button:link,
+.nav-button:visited {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(180deg, #017b96 0%, #1e4047 100%);
+  border-radius: 23.5px;
+}
+
+.nav-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(#fff, 0.2);
+}
+.nav-button::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.nav-button:active,
+.nav-button:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(#fff, 0.2);
+}

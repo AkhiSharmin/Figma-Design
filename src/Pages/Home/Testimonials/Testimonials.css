@@ -1,0 +1,17 @@
+.testimonials-content {
+  width: 170px;
+  height: 240px;
+  left: 738.39px;
+  top: 4805.66px;
+
+  background: #416f75;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.testimonial-img {
+  position: absolute;
+  width: 114.87px;
+  height: 115.74px;
+  left: 80px;
+  top: -50px;
+}
